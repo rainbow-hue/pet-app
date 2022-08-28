@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pet</title>
+</head>
+
+<body>
+    <h1>My Pet</h1>
+    <form id="form1" method="post">
+        Name: <input type="text" class="input">
+        Age: <input type="number" class="input" placeholder="in years">
+        Weight: <input type="number" class="input" placeholder="in kg">
+        Type: <input type="text" class="input" placeholder="cat/dog/bird etc.">
+        <input type="submit" class="button" onclick="a()">
+    </form>
+</body>
+
+<style>
+    body {
+        background-color: #237196;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+
+    #form1 {
+        font-weight: bold;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .input {
+        margin-top: 5px;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+
+    .button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 600px;
+        margin-right: 600px;
+        padding: 10px;
+    }
+</style>
+
+<script>
+    function a() {
+        alert("Your pet's info has been stored in the database.");
+    }
+</script>
+
+</html>
